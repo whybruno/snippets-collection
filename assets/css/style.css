@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Viet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* font-family: 'Kdam Thmor Pro', sans-serif; */
+
+/* font-family: 'Noto Sans Tai Viet', sans-serif; */
+
+:root {
+    --darkness: #111418;
+    --grayness: #838384;
+    --orange: #F9360F;
+    --purple: #a85ff1;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans Tai Viet', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--darkness);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding: 1rem;
+}
+
+header > section {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 1024px;
+    height: 7.5rem;
+}
+
+h1 {
+    color: var(--orange);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--orange);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: var(--orange);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1rem;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+}
+
+i:after {
+    content: "💜";
+  }
+
+#mainGrid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0px 5%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "snippet-1 snippet-2 snippet-3"
+        "snippet-4 snippet-5 snippet-6";
+}
+
+#snippet-1 {
+    grid-area: snippet-1;
+}
+
+#snippet-2 {
+    grid-area: snippet-2;
+}
+
+#snippet-3 {
+    grid-area: snippet-3;
+}
+
+#snippet-4 {
+    grid-area: snippet-4;
+}
+
+#snippet-5 {
+    grid-area: snippet-5;
+}
+
+#snippet-6 {
+    grid-area: snippet-6;
+}
+
+.snippet-card {
+    border: 2px dotted var(--purple);
+    width: 20rem;
+    padding: 1rem 1rem;
+}
+
+.snippet-title {
+    background-color: var(--darkness);
+    border: 2px solid var(--purple);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    /* position: relative; */
+    /* top: -3rem; */
+    width: 100%;
+    height: auto;
+}
+
+.snippet-description {
+    margin: 1rem 0;
+}
+
+.snippet-description > p {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    /* background-color: red; */
+}
+
+.snippet-content {
+    background: rgb(168,95,241);
+    background: linear-gradient(180deg, rgba(168,95,241,1) 0%, rgba(105,36,178,1) 100%);
+    padding: 1.5rem;
+}
+
+footer {
+    padding: 1.5rem;
+}
+
